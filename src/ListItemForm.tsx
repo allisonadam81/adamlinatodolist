@@ -19,7 +19,6 @@ const ListItemForm: React.FC<ListItemFormProps> = ({ addTask }) => {
 
   const onSubmit = (e: OnFormSubmit) => {
     e.preventDefault();
-    console.log(task)
     addTask(task);
     setTask('');
   }
